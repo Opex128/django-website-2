@@ -6,18 +6,21 @@
 
 {%block content%}
 <div class="features">
-   <h1>Новости на сайте</h1>
+   <div>
+      <h1 class="header">Новости на сайте</h1> 
+   </div>
    {% if news%}
       {%for el in news%}
          <div class="alert alert-warning">
             <h3>{{el.title}}</h3>
             <p>{{el.anons}} </p>
-            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Читать детальнее</a>
+            <a href="{% url 'news-detail' el.id %}" class="btn btn-warning">Подробнее</a>
          </div>
       {%endfor%}
    {%else%}
       <p> У вас нет записей!</p>
    {%endif%}
+   <a href="{% url 'create'%}"><button class="btn btn-warning"><i class="fa-solid fa-plus"></i> Добавить запись</button></a>
 </div>
  
   

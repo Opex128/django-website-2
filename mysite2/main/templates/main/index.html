@@ -8,7 +8,7 @@
  <div class="features">
     <h1>{{title}}</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad pariatur omnis accusantium sunt in sapiente quisquam provident. Fugit optio voluptatem, ipsum, natus doloremque quas rerum amet, quis et dolore nostrum!</p>
-    <buttton class="btn btn-warning"> На страницу про нас</buttton>
+    <a href="{% url 'news_home'%}"><buttton class="btn btn-warning"> Новости</buttton></a>
     {% for el in values%}
         {% if el == 'Hello'%}
     

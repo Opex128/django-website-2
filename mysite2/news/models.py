@@ -1,4 +1,8 @@
+import datetime
+
 from django.db import models
+from django.utils import timezone
+from django.contrib import admin
 
 
 class Articles(models.Model):
@@ -12,6 +16,15 @@ class Articles(models.Model):
 
     def get_absolute_url(self):
         return f"/news/{self.id}"
+
+    @admin.display(
+        boolean=True,
+        ordering="date",
+        description="Published recently?",
+    )
+    def was_published_recently(self):
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.date <= now
 
     class Meta:
         verbose_name = "Новость"
