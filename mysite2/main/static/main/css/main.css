@@ -109,3 +109,9 @@ main .features p {
     outline: none;
     align-items: center;
 }
+
+form{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
