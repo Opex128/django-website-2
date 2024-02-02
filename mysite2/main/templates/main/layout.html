@@ -17,9 +17,10 @@
         <!-- <h3>НАВИГАЦИЯ</h3> -->
         <ul>
             <a href="{% url 'home'%}"><li><!-- <i class="fa-solid fa-house"></i> --> ГЛАВНАЯ</li></a>
-            <!-- <a href="{% url 'about'%}"><li><i class="fa-solid fa-address-card"></i> О нас</li></a> -->
             <a href="{% url 'news_home'%}"><li><!-- <i class="fa-solid fa-newspaper"></i> --> НОВОСТИ</li></a>
-            <a href=""><li><!-- <i class="fa-solid fa-paper-plane"></i>  -->КОНТАКТЫ</li></a>
+            <a href="{% url 'contacts'%}"><li><!-- <i class="fa-solid fa-address-card"></i> --> КОНТАКТЫ</li></a>
+        
+
         </ul>
     </aside>
     <!-- Основная часть -->

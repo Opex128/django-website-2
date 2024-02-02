@@ -1,6 +1,8 @@
 
 body{
     background: #ECF5FA;
+    color: #FFFFFF;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*Боковая панель*/
@@ -9,7 +11,7 @@ aside{
     float: left;
     background-color: #C9E7FF;
     padding: 2.5%;
-    height: 100vh;
+    height: 180vh;
     width: 20%;
     color: #040A44;
 /* border-right: 5px solid #6B5DF5; */
@@ -52,7 +54,8 @@ aside ul li{
     color: #040A44 ;
     margin-top: 20px;
     transition: transform .6s ease;
-    /*left: -30px;*/
+    position: relative;
+    left: 22px;
     
 }
 /*Список*/
@@ -118,9 +121,23 @@ main .features p {
 }
 
 form{
-    margin-left: 32%;
+    margin-left: 28%;
     width: 500px;
-    margin-top: 50px;
+    margin-top: 25px;
+
+}
+
+
+
+.features .form-control{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #040A44;
+    border-radius: 4px;
+}
+
+.features .form-control::placeholder{
+    color: #040A44;
 }
 
 /* Удалить статью*/
@@ -139,8 +156,53 @@ aside .btn{
     border: none;
     outline: none;
 }
-
+/* текст статьи */
 p{
-    font-size: 14px;
-    text-align: justify;
+    font-size: 16px;
+    text-align: start;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контакты страница */
+/* .footer-connection{
+    border: 1px solid red;
+} */
+
+.footer-connection {
+    padding: 0;
+    margin: 15px;
+
+ }
+   
+.footer-connection h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+   
+.footer-connection ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+   
+.footer-connection li {
+    margin-bottom: 5px;
+    text-align: left;
+    position: relative;
+    left: 436px;
+
+}
+
+.footer-connection  a {
+    text-decoration: none;
+    color: #040A44;
 }

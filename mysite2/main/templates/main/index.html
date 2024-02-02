@@ -6,9 +6,10 @@
 
 {%block content%}
  <div class="features">
-    <h1>{{title}}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad pariatur omnis accusantium sunt in sapiente quisquam provident. Fugit optio voluptatem, ipsum, natus doloremque quas rerum amet, quis et dolore nostrum!</p>
-    <a href="{% url 'news_home'%}"><buttton class="btn btn-warning"> Новости</buttton></a>
+    <!-- <h1>{{title}}</h1> -->
+    <h1>Новости графического дизайна</h1>
+<p>Здесь вы найдете всю информацию о графическом дизайне и его последних тенденциях. <br> Мы предоставляем свежие новости, статьи и аналитические материалы, которые помогут вам узнать больше о мире графического дизайна и его возможностях.</p>
+    <a href="{% url 'news_home'%}"><buttton class="btn btn-warning"> Читать</buttton></a>
     {% for el in values%}
         {% if el == 'Hello'%}
     
